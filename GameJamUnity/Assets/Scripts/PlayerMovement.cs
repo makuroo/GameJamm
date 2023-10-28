@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     public float movementSpeed = 5;
     [SerializeField] private Camera cam;
-    private bool facingRight = false;
+    private bool facingRight = true;
 
     Vector2 movement;
     Vector2 mousePos;
@@ -41,7 +41,9 @@ public class PlayerMovement : MonoBehaviour
         if ((movement.x < 0 && facingRight) || (movement.x > 0 && !facingRight))
         {
             Flip();
+            anim.SetBool("isRunningLeft", true);
         }
+
         bool isMoving = movement.magnitude > 0.1f;
         anim.SetBool("isRunning", isMoving);
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
