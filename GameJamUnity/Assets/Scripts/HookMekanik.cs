@@ -56,7 +56,7 @@ public class HookMekanik : MonoBehaviour
                 rb.constraints = RigidbodyConstraints2D.FreezeAll;
                 UpdateLineRenderer(transform.position, chain.transform.position);
 
-                yield return StartCoroutine(MoveTowardsHook(chain.transform.position));
+                yield return StartCoroutine(MoveTowardsHook(chain.transform.position, chain));
 
                 Destroy(chain);
 
@@ -66,11 +66,12 @@ public class HookMekanik : MonoBehaviour
         }
     }
 
-    IEnumerator MoveTowardsHook(Vector3 hookPosition)
+    IEnumerator MoveTowardsHook(Vector3 hookPosition, GameObject chain)
     {
         while (Vector3.Distance(transform.position, hookPosition) > 0.1f)
         {
             transform.position = Vector3.MoveTowards(transform.position, hookPosition, moveSpeed * Time.deltaTime);
+            UpdateLineRenderer(transform.position, chain.transform.position);
             yield return null;
         }
     }
