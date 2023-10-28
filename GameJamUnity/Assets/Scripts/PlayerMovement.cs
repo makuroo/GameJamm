@@ -41,7 +41,6 @@ public class PlayerMovement : MonoBehaviour
         if ((movement.x < 0 && facingRight) || (movement.x > 0 && !facingRight))
         {
             Flip();
-            anim.SetBool("isRunningLeft", true);
         }
 
         bool isMoving = movement.magnitude > 0.1f;
