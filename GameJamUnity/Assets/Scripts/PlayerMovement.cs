@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
     private Animator anim;
     private float lastRollTime = 0f;
     private bool isRolling = false;
@@ -16,11 +15,11 @@ public class PlayerMovement : MonoBehaviour
 
     Vector2 movement;
     Vector2 mousePos;
+
     void Start()
     {
         anim = GetComponent<Animator>();
     }
-
 
     void Update()
     {
@@ -45,6 +44,40 @@ public class PlayerMovement : MonoBehaviour
 
         bool isMoving = movement.magnitude > 0.1f;
         anim.SetBool("isRunning", isMoving);
+
+        if (isMoving)
+        {
+            bool isVerticalMovement = Mathf.Abs(movement.y) > Mathf.Abs(movement.x);
+
+            if (isVerticalMovement)
+            {
+                if (movement.y > 0)
+                {
+                    anim.SetBool("isRunningUp", true);
+                    anim.SetBool("isRunningDown", false);
+                    anim.SetBool("isRunningDiagonal", false);
+                }
+                else
+                {
+                    anim.SetBool("isRunningUp", false);
+                    anim.SetBool("isRunningDown", true);
+                    anim.SetBool("isRunningDiagonal", false);
+                }
+            }
+            else
+            {
+                anim.SetBool("isRunningUp", false);
+                anim.SetBool("isRunningDown", false);
+                anim.SetBool("isRunningDiagonal", true);
+            }
+        }
+        else
+        {
+            anim.SetBool("isRunningUp", false);
+            anim.SetBool("isRunningDown", false);
+            anim.SetBool("isRunningDiagonal", false);
+        }
+
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
     }
 
@@ -55,6 +88,7 @@ public class PlayerMovement : MonoBehaviour
         Vector2 lookDir = mousePos - rb.position;
         float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
     }
+
     private void Flip()
     {
         facingRight = !facingRight;
@@ -80,11 +114,10 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = Vector2.zero;
         }
     }
+
     private void StartRoll()
     {
         anim.SetTrigger("isRolling");
         isRolling = true;
-
-        
     }
 }
