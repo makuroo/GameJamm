@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 53808e11acc92124991f1cb3cff2aded
+guid: 89e1925cd99baec4ebbae7f7465e8f62
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -102,18 +102,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -129,505 +117,673 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: All_Asset_Barang_0
+      name: tilemaptes-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 320
-        width: 193
-        height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a4193cb10dd40314da2b11578da7785f
-      internalID: 1305785283
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: All_Asset_Barang_3
-      rect:
-        serializedVersion: 2
-        x: 193
-        y: 512
-        width: 63
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b6ccf44a3eb39a44ebd63eb7d26ba763
-      internalID: 1199947671
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: All_Asset_Barang_4
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 512
+        y: 0
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a0fc93ab3689ee4690ea65f1898d745
-      internalID: -1848902388
+      spriteID: 8203f229b2277aa41b83a441bd51d13f
+      internalID: 110828197
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: All_Asset_Barang_5
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 448
-        width: 64
-        height: 128
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0b27340dc6de07d43b00c76f79714d0c
-      internalID: -75265852
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: All_Asset_Barang_8
-      rect:
-        serializedVersion: 2
-        x: 193
-        y: 448
-        width: 63
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e0754b75c410a3941882ffeb9f367a13
-      internalID: 1020085486
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: All_Asset_Barang_9
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 448
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d48f9b216c9fe0a4e9fdf7b5f489a778
-      internalID: -2095109610
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: All_Asset_Barang_13
-      rect:
-        serializedVersion: 2
-        x: 193
-        y: 384
-        width: 63
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca970009809a4c34e83c3b79b931444d
-      internalID: -1684314567
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: All_Asset_Barang_14
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 384
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8820a9c58ab484c4b9ff27508d7c9dc0
-      internalID: -1922513081
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: All_Asset_Barang_15
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 320
-        width: 64
-        height: 128
-      alignment: 9
-      pivot: {x: 0.51796293, y: 0.2155571}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c86b09abf4a8b0c4ba687507c6d3cda9
-      internalID: 648356608
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: All_Asset_Barang_19
-      rect:
-        serializedVersion: 2
-        x: 193
-        y: 256
-        width: 127
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f985b0ae48225945b0fd992dadf9484
-      internalID: 1968647255
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: All_Asset_Barang_22
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 256
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca19728059857a344a41625b6ae4bfbe
-      internalID: -1718601893
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: All_Asset_Barang_25
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 192
-        width: 64
-        height: 128
-      alignment: 9
-      pivot: {x: 0.51475525, y: 0.21640313}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 09b71e1226d91864daf217d252d48de1
-      internalID: 1577555550
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: All_Asset_Barang_27
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 192
-        width: 128
-        height: 64
-      alignment: 9
-      pivot: {x: 0.50760627, y: 0.45067286}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 17099a5eee1d6e14884f4574e8363e22
-      internalID: -449667395
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: All_Asset_Barang_29
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b19a6a3b35749ae43994b9d63f5e3bc7
-      internalID: -1461727952
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: All_Asset_Barang_30
+      name: tilemaptes-Sheet_1
       rect:
         serializedVersion: 2
         x: 64
-        y: 128
+        y: 0
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3be52d5893c685c40828ee09ecd65865
-      internalID: -1051231600
+      spriteID: f1e6c52f9a9c06d43938019a7b5f666d
+      internalID: 1275873626
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: All_Asset_Barang_31
+      name: tilemaptes-Sheet_2
       rect:
         serializedVersion: 2
         x: 128
-        y: 128
+        y: 0
         width: 64
-        height: 63
-      alignment: 9
-      pivot: {x: 0.5, y: 0.62}
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c651b79cbec93542846bb3c8b55b3fb
-      internalID: -805200230
+      spriteID: 427f97c245309a049a56d8fbfadee26c
+      internalID: 2039107642
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: All_Asset_Barang_32
+      name: tilemaptes-Sheet_3
       rect:
         serializedVersion: 2
         x: 192
-        y: 128
+        y: 0
         width: 64
-        height: 63
-      alignment: 9
-      pivot: {x: 0.5, y: 0.61}
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4cd0feb8990cdd418607832f09cc701
-      internalID: 264916990
+      spriteID: 7f0f16c52f1f7a5468c00f571d687ac6
+      internalID: -1680214506
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: All_Asset_Barang_33
+      name: tilemaptes-Sheet_4
       rect:
         serializedVersion: 2
         x: 256
-        y: 128
+        y: 0
         width: 64
-        height: 63
-      alignment: 9
-      pivot: {x: 0.5, y: 0.23}
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa20cf2836ef906449f13f1549e5462f
-      internalID: 2072352528
+      spriteID: adefbf2e3f7947c4f92555ea50a8ee95
+      internalID: -208030769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: All_Asset_Barang_34
+      name: tilemaptes-Sheet_5
       rect:
         serializedVersion: 2
         x: 320
-        y: 128
+        y: 0
         width: 64
-        height: 63
-      alignment: 9
-      pivot: {x: 0.5, y: 0.81}
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2bac34a3f58336e4e9090aa905d69e60
-      internalID: -61046061
+      spriteID: 0b3d512c2370caa4c8e920782daea331
+      internalID: -321378932
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: All_Asset_Barang_35
+      name: tilemaptes-Sheet_6
       rect:
         serializedVersion: 2
         x: 384
-        y: 128
+        y: 0
         width: 64
-        height: 63
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff341b01556157e4b88ef737e40490b6
-      internalID: -863876369
+      spriteID: 634fec311a4f9f946928836b97540fa1
+      internalID: -310863304
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: All_Asset_Barang_36
+      name: tilemaptes-Sheet_7
       rect:
         serializedVersion: 2
         x: 448
-        y: 128
+        y: 0
         width: 64
-        height: 63
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8da84f16397a3a44886dbaa2473964d
-      internalID: 16735788
+      spriteID: 1838de62b5ab7984dae269baf12b1f90
+      internalID: -194698552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: All_Asset_Barang_37
+      name: tilemaptes-Sheet_8
       rect:
         serializedVersion: 2
         x: 512
-        y: 128
+        y: 0
         width: 64
-        height: 63
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d50fef2def4bdb45b31ff8fc59e864c
-      internalID: 1044874501
+      spriteID: f87076f6d12491b4d85b26625e0b4622
+      internalID: -75506390
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: All_Asset_Barang_38
+      name: tilemaptes-Sheet_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 576
+        y: 0
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: -0.03, y: 0.94}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13f63852ba2dc154fb31415457fc2d53
-      internalID: 1288288664
+      spriteID: 930ea291dff934940b7c56e297e194b2
+      internalID: 151955217
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: All_Asset_Barang_39
+      name: tilemaptes-Sheet_10
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
+        x: 640
+        y: 0
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d225d0d32db2eb84a82e3e9241c42d08
-      internalID: 2097887941
+      spriteID: f9d64c9b2ee0fc540a6f6c571e83f469
+      internalID: 1448279448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemaptes-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 846a5544d84871e4ab04579cc81c7bc3
+      internalID: -1784842221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemaptes-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24dee765160e2eb40a78c13fc0d91fa4
+      internalID: 41911263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemaptes-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e4c64544053f8e40bae71def03ec5ff
+      internalID: -1661980955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemaptes-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2bc1473d2450584f8a31489ff1e1565
+      internalID: 1886053775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemaptes-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2516c77ac6d31d4ca5608bd5f5b9f4b
+      internalID: -1985819654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemaptes-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8372b3457fb61654791ce496edd500aa
+      internalID: -150261958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemaptes-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d401357d20262041884a2fd81708376
+      internalID: 1532409073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemaptes-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b52a50fdf0a734a95b7825f57164d6
+      internalID: 1411224434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemaptes-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16ce4a5efd15d5a4e9617177e1b39050
+      internalID: -1510746726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemaptes-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a0bac46f69ce6c45b78117ec7b4e636
+      internalID: -1608737474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemaptes-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d25a4012dd95004a801a16a11f9bd66
+      internalID: -316780135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemaptes-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9291ffa731b5a84449e7198fae3a4d84
+      internalID: -1034644360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemaptes-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f81090da56465b7429e0f2e27fccb18d
+      internalID: -982997189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemaptes-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6aff16a86227348983254a90e913b7
+      internalID: -695226352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemaptes-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ae7513e98fba5446b950d0875e87151
+      internalID: 2128952318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemaptes-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c00d6e04776c3b4f8fb2b0332db11d9
+      internalID: -1207302300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemaptes-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e2fe4f0c73f6647bd88d94ba556159
+      internalID: -280213155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemaptes-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad3905721fd50a54b8ae28af4c689fd7
+      internalID: 1137543640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemaptes-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 282abcd43bcf25641a4843f9839a0a10
+      internalID: 1833478044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemaptes-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a74635be484dd69488823f343d5feeb5
+      internalID: 1775174893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemaptes-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4cc937e825e7a04cbce5438d0b33c92
+      internalID: 1662977274
       vertices: []
       indices: 
       edges: []
@@ -643,46 +799,38 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      All_Asset_Barang_0: 1305785283
-      All_Asset_Barang_1: -2093436125
-      All_Asset_Barang_10: 1427703627
-      All_Asset_Barang_11: -265626245
-      All_Asset_Barang_12: -636368265
-      All_Asset_Barang_13: -1684314567
-      All_Asset_Barang_14: -1922513081
-      All_Asset_Barang_15: 648356608
-      All_Asset_Barang_16: 540928600
-      All_Asset_Barang_17: 732552985
-      All_Asset_Barang_18: 1543694417
-      All_Asset_Barang_19: 1968647255
-      All_Asset_Barang_2: -1142019521
-      All_Asset_Barang_20: -753457096
-      All_Asset_Barang_21: 1770489145
-      All_Asset_Barang_22: -1718601893
-      All_Asset_Barang_23: 1699455922
-      All_Asset_Barang_24: 1301130711
-      All_Asset_Barang_25: 1577555550
-      All_Asset_Barang_26: -640044766
-      All_Asset_Barang_27: -449667395
-      All_Asset_Barang_28: 1203270870
-      All_Asset_Barang_29: -1461727952
-      All_Asset_Barang_3: 1199947671
-      All_Asset_Barang_30: -1051231600
-      All_Asset_Barang_31: -805200230
-      All_Asset_Barang_32: 264916990
-      All_Asset_Barang_33: 2072352528
-      All_Asset_Barang_34: -61046061
-      All_Asset_Barang_35: -863876369
-      All_Asset_Barang_36: 16735788
-      All_Asset_Barang_37: 1044874501
-      All_Asset_Barang_38: 1288288664
-      All_Asset_Barang_39: 2097887941
-      All_Asset_Barang_4: -1848902388
-      All_Asset_Barang_5: -75265852
-      All_Asset_Barang_6: -111048299
-      All_Asset_Barang_7: 1170579004
-      All_Asset_Barang_8: 1020085486
-      All_Asset_Barang_9: -2095109610
+      tilemaptes-Sheet_0: 110828197
+      tilemaptes-Sheet_1: 1275873626
+      tilemaptes-Sheet_10: 1448279448
+      tilemaptes-Sheet_11: -1784842221
+      tilemaptes-Sheet_12: 41911263
+      tilemaptes-Sheet_13: -1661980955
+      tilemaptes-Sheet_14: 1886053775
+      tilemaptes-Sheet_15: -1985819654
+      tilemaptes-Sheet_16: -150261958
+      tilemaptes-Sheet_17: 1532409073
+      tilemaptes-Sheet_18: 1411224434
+      tilemaptes-Sheet_19: -1510746726
+      tilemaptes-Sheet_2: 2039107642
+      tilemaptes-Sheet_20: -1608737474
+      tilemaptes-Sheet_21: -316780135
+      tilemaptes-Sheet_22: -1034644360
+      tilemaptes-Sheet_23: -982997189
+      tilemaptes-Sheet_24: -695226352
+      tilemaptes-Sheet_25: 2128952318
+      tilemaptes-Sheet_26: -1207302300
+      tilemaptes-Sheet_27: -280213155
+      tilemaptes-Sheet_28: 1137543640
+      tilemaptes-Sheet_29: 1833478044
+      tilemaptes-Sheet_3: -1680214506
+      tilemaptes-Sheet_30: 1775174893
+      tilemaptes-Sheet_31: 1662977274
+      tilemaptes-Sheet_4: -208030769
+      tilemaptes-Sheet_5: -321378932
+      tilemaptes-Sheet_6: -310863304
+      tilemaptes-Sheet_7: -194698552
+      tilemaptes-Sheet_8: -75506390
+      tilemaptes-Sheet_9: 151955217
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
