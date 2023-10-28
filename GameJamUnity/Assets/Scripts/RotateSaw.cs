@@ -5,7 +5,7 @@ using UnityEngine;
 public class RotateSaw : MonoBehaviour
 {
     [SerializeField] private Transform rotateTarget;
-    [SerializeField] private float rotateSpeed;
+    public float rotateSpeed;
     // Start is called before the first frame update
     void Start()
     {
