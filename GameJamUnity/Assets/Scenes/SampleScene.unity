@@ -2358,7 +2358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chakramPrefab: {fileID: 1550709851672729150, guid: 0f401a179ce09c54fb3147148365dfb5, type: 3}
-  chakramSpeed: 5
+  chakramSpeed: 10
   player: {fileID: 1496863853}
 --- !u!114 &1544245199
 MonoBehaviour:
