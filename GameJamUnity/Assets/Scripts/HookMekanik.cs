@@ -7,6 +7,8 @@ public class HookMekanik : MonoBehaviour
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject chainPrefabs;
     [SerializeField] private GameObject[] trees;
+    [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private float chainSpeed = 5f;
     private LineRenderer lr;
 
     void Start()
@@ -35,7 +37,7 @@ public class HookMekanik : MonoBehaviour
             {
                 GameObject chainInstance = Instantiate(chainPrefabs, transform.position, Quaternion.identity);
                 Rigidbody2D rb = chainInstance.GetComponent<Rigidbody2D>();
-                rb.velocity = (closestTree.transform.position - transform.position).normalized * 5f;
+                rb.velocity = (closestTree.transform.position - transform.position).normalized * chainSpeed;
 
                 StartCoroutine(FreezeChainWhenClose(chainInstance, closestTree));
             }
@@ -53,8 +55,22 @@ public class HookMekanik : MonoBehaviour
                 rb.velocity = Vector2.zero;
                 rb.constraints = RigidbodyConstraints2D.FreezeAll;
                 UpdateLineRenderer(transform.position, chain.transform.position);
+
+                yield return StartCoroutine(MoveTowardsHook(chain.transform.position));
+
+                Destroy(chain);
+
                 yield break;
             }
+            yield return null;
+        }
+    }
+
+    IEnumerator MoveTowardsHook(Vector3 hookPosition)
+    {
+        while (Vector3.Distance(transform.position, hookPosition) > 0.1f)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, hookPosition, moveSpeed * Time.deltaTime);
             yield return null;
         }
     }
