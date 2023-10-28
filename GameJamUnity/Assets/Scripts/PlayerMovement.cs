@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isRolling = false;
     [SerializeField] private float rollCooldown = 1f;
     [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private float movementSpeed = 5;
+    public float movementSpeed = 5;
     [SerializeField] private Camera cam;
     private bool facingRight = false;
 
