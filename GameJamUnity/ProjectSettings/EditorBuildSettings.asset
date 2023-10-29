@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Intro.unity
     guid: 4af4035ecb7609f41915e2c07fe59ef2
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
     path: Assets/Scenes/Lab_2023.unity
     guid: b673539bcc215754cb2562516cb26be5
   - enabled: 1

@@ -32,6 +32,7 @@ public class CutsceneIntro : MonoBehaviour
     {
         SceneManager.LoadScene(1);
         PlayerPrefs.SetInt("HasBall", 0);
+        PlayerPrefs.SetFloat("HasPutBall", 0);
     }
 
 

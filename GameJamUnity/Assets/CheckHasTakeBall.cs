@@ -21,7 +21,11 @@ public class CheckHasTakeBall : MonoBehaviour
 
         if(isInBallHolder==true && (!PlayerPrefs.HasKey("HasPutBall") || PlayerPrefs.GetInt("HasPutBall") == 0))
         {
-            PlayerPrefs.SetInt("HasPutBall", 1);
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                PlayerPrefs.SetInt("HasPutBall", 1);
+                transform.GetChild(0).gameObject.SetActive(false);
+            }
         }
     }
 
@@ -30,6 +34,14 @@ public class CheckHasTakeBall : MonoBehaviour
         if (collision.gameObject.CompareTag("BallHolder"))
         {
             isInBallHolder = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("BallHolder"))
+        {
+            isInBallHolder = false;
         }
     }
 }
