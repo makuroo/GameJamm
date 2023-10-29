@@ -5,9 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - Border
-  - Sawblade
-  - Enemy
-  - Chakram
   layers:
   - Default
   - TransparentFX
@@ -44,7 +41,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Portal
-    uniqueID: 1274850233
     locked: 0
