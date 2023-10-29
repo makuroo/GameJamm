@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2100424fd03b06445adc1345eff59a87
+guid: 8bb8eef26abeb78448845c9b9b0d7503
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -102,30 +102,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -141,55 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: astro-kanan -Sheet_0
+      name: astro1.2-roll1-Sheet4_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 21
-        width: 49
-        height: 60
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e54aeb48b8b5ea248ae1bec447b4ad6d
-      internalID: -41576135
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: astro-kanan -Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 135
-        y: 17
-        width: 46
-        height: 68
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e57de6c03c633d46a754cec3929dfcf
-      internalID: -1523371085
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: astro-kanan -Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 243
+        x: 40
         y: 16
-        width: 41
-        height: 68
+        width: 50
+        height: 49
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,62 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 179990ab30492074fb75a306f5b9d6d4
-      internalID: -1840643302
+      spriteID: bda95d10718a95f46aa62a8e41675650
+      internalID: -218979358
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: astro-kanan -Sheet_3
+      name: astro1.2-roll1-Sheet4_1
       rect:
         serializedVersion: 2
-        x: 356
-        y: 21
-        width: 49
-        height: 60
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ec695b5c98ecbd498fcaa6cf97c4c4c
-      internalID: -1778556558
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: astro-kanan -Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 471
-        y: 17
-        width: 46
-        height: 68
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1789f86007f62f94f80fd4463fc58565
-      internalID: -1947591843
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: astro-kanan -Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 579
+        x: 176
         y: 16
-        width: 41
-        height: 68
+        width: 49
+        height: 53
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,8 +152,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f135f35e16bbee84c84fb51a2f19e4b3
-      internalID: 1110795644
+      spriteID: 2c8882f789e0d954cabf3779c18e5338
+      internalID: 537037922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astro1.2-roll1-Sheet4_2
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 16
+        width: 52
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a10f69e7770a24d99bc7f2f833e3f0
+      internalID: -1914785192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astro1.2-roll1-Sheet4_3
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 16
+        width: 48
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 013f4b7df1eeca64fbaa3490e879b335
+      internalID: 1973592066
       vertices: []
       indices: 
       edges: []
@@ -277,12 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      astro-kanan -Sheet_0: -41576135
-      astro-kanan -Sheet_1: -1523371085
-      astro-kanan -Sheet_2: -1840643302
-      astro-kanan -Sheet_3: -1778556558
-      astro-kanan -Sheet_4: -1947591843
-      astro-kanan -Sheet_5: 1110795644
+      astro1.2-roll1-Sheet4_0: -218979358
+      astro1.2-roll1-Sheet4_1: 537037922
+      astro1.2-roll1-Sheet4_2: -1914785192
+      astro1.2-roll1-Sheet4_3: 1973592066
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

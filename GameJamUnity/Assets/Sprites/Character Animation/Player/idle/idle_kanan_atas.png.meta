@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2100424fd03b06445adc1345eff59a87
+guid: 4552cdb392524c744a62b5afd6728180
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -102,30 +102,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -141,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: astro-kanan -Sheet_0
+      name: idle_kanan_atas_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 21
-        width: 49
-        height: 60
+        x: 9
+        y: 0
+        width: 45
+        height: 65
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e54aeb48b8b5ea248ae1bec447b4ad6d
-      internalID: -41576135
+      spriteID: af0e4f7ab5b2c46469370beef45ef480
+      internalID: -1121366744
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: astro-kanan -Sheet_1
+      name: idle_kanan_atas_1
       rect:
         serializedVersion: 2
-        x: 135
-        y: 17
-        width: 46
-        height: 68
+        x: 68
+        y: 0
+        width: 45
+        height: 69
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,92 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e57de6c03c633d46a754cec3929dfcf
-      internalID: -1523371085
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: astro-kanan -Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 243
-        y: 16
-        width: 41
-        height: 68
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 179990ab30492074fb75a306f5b9d6d4
-      internalID: -1840643302
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: astro-kanan -Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 356
-        y: 21
-        width: 49
-        height: 60
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ec695b5c98ecbd498fcaa6cf97c4c4c
-      internalID: -1778556558
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: astro-kanan -Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 471
-        y: 17
-        width: 46
-        height: 68
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1789f86007f62f94f80fd4463fc58565
-      internalID: -1947591843
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: astro-kanan -Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 579
-        y: 16
-        width: 41
-        height: 68
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f135f35e16bbee84c84fb51a2f19e4b3
-      internalID: 1110795644
+      spriteID: 712f5af31c4743644bcb9624415e4394
+      internalID: -1732675126
       vertices: []
       indices: 
       edges: []
@@ -277,12 +169,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      astro-kanan -Sheet_0: -41576135
-      astro-kanan -Sheet_1: -1523371085
-      astro-kanan -Sheet_2: -1840643302
-      astro-kanan -Sheet_3: -1778556558
-      astro-kanan -Sheet_4: -1947591843
-      astro-kanan -Sheet_5: 1110795644
+      idle_kanan_atas_0: -1121366744
+      idle_kanan_atas_1: -1732675126
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
