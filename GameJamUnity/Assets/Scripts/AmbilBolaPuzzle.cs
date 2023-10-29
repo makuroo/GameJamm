@@ -11,6 +11,13 @@ public class AmbilBolaPuzzle : MonoBehaviour
     private bool gembok = true;
     public GameObject space;
     public PuzzleController puzzleControllerScript;
+    [SerializeField]
+    private int hasBallBall;
+
+    private void Start() //NANTI DIAPUS WAJIB
+    {
+        PlayerPrefs.SetInt("HasBall", 0);
+    }
 
     private void Update()
     {
@@ -30,12 +37,11 @@ public class AmbilBolaPuzzle : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
-        int hasBallBall;
         hasBallBall = PlayerPrefs.GetInt("HasBall");
 
         if (collision.CompareTag("Player") && puzzleControllerScript.isWin == true && hasBallBall == 0)
         {
+            Debug.Log("masuk collider pick up ball");
             space.SetActive(true);
             gembok = false;
         }

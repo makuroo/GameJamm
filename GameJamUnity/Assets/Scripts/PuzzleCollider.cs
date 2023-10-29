@@ -8,6 +8,7 @@ public class PuzzleCollider : MonoBehaviour
     public PuzzleController puzzleControllerScript;
     public GameObject space;
     public bool gembok = true;
+    public PlayerMovement playerMovementScript;
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) && !gembok)
@@ -16,6 +17,8 @@ public class PuzzleCollider : MonoBehaviour
             puzzleControllerScript.StartThePuzzle();
             gameObject.SetActive(false);
             space.SetActive(false);
+            playerMovementScript.isRolling = true;
+            playerMovementScript.movementSpeed = 0;
         }
     }
 
@@ -26,6 +29,7 @@ public class PuzzleCollider : MonoBehaviour
         {
             space.SetActive(true);
             gembok = false;
+
         }
     }
 
