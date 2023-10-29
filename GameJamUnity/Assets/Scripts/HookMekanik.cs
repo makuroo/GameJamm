@@ -7,8 +7,8 @@ public class HookMekanik : MonoBehaviour
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject chainPrefabs;
     [SerializeField] private GameObject[] trees;
-    [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private float chainSpeed = 5f;
+    [SerializeField] private float moveSpeed = 4f;
+    [SerializeField] private float chainSpeed = 4f;
     private LineRenderer lr;
     private SpriteRenderer spriteRenderer;
     public Sprite[] frames;
@@ -52,7 +52,7 @@ public class HookMekanik : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(5f);
+            yield return new WaitForSeconds(2f);
             GameObject closestTree = FindClosestTree();
             if (closestTree != null)
             {
