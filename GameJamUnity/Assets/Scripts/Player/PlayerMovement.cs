@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;
     private float lastRollTime = 0f;
     private bool isRolling = false;
-    [SerializeField] private float rollCooldown = 1f;
+    [SerializeField] private float rollCooldown = 0f;
     [SerializeField] private Rigidbody2D rb;
     public float movementSpeed = 5;
     [SerializeField] private Camera cam;
@@ -35,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 StartRoll();
                 lastRollTime = currentTime;
+                isRolling = false;
             }
         }
         if ((movement.x < 0 && facingRight) || (movement.x > 0 && !facingRight))
@@ -45,41 +46,57 @@ public class PlayerMovement : MonoBehaviour
         bool isMoving = movement.magnitude > 0.1f;
         anim.SetBool("isRunning", isMoving);
 
-        if (isMoving)
-        {
-            bool isVerticalMovement = Mathf.Abs(movement.y) > Mathf.Abs(movement.x);
+        bool isPressedA = Input.GetKey(KeyCode.A);
+        bool isPressedD = Input.GetKey(KeyCode.D);
+        bool isPressedW = Input.GetKey(KeyCode.W);
+        bool isPressedS = Input.GetKey(KeyCode.S);
 
-            if (isVerticalMovement)
-            {
-                if (movement.y > 0)
-                {
-                    anim.SetBool("isRunningUp", true);
-                    anim.SetBool("isRunningDown", false);
-                    anim.SetBool("isRunningDiagonal", false);
-                }
-                else
-                {
-                    anim.SetBool("isRunningUp", false);
-                    anim.SetBool("isRunningDown", true);
-                    anim.SetBool("isRunningDiagonal", false);
-                }
-            }
-            else
-            {
-                anim.SetBool("isRunningUp", false);
-                anim.SetBool("isRunningDown", false);
-                anim.SetBool("isRunningDiagonal", true);
-            }
-        }
-        else
+        anim.SetBool("isRunningUp", isPressedW && !isPressedA && !isPressedD);
+        anim.SetBool("isRunningDown", isPressedS && !isPressedA && !isPressedD);
+        anim.SetBool("isRunningDiagonal", isPressedW && (isPressedA || isPressedD));
+        anim.SetBool("isRunningDiagonalDown", isPressedS && (isPressedA || isPressedD));
+
+        if (!isPressedA && !isPressedD && !isPressedW && !isPressedS)
         {
             anim.SetBool("isRunningUp", false);
             anim.SetBool("isRunningDown", false);
             anim.SetBool("isRunningDiagonal", false);
+            anim.SetBool("isRunningDiagonalDown", false);
+
+            if (isMoving)
+            {
+                if (Mathf.Abs(movement.x) > Mathf.Abs(movement.y))
+                {
+                    if (movement.x > 0)
+                    {
+                        anim.SetBool("isRunningRight", true);
+                        anim.SetBool("isRunningLeft", false);
+                    }
+                    else
+                    {
+                        anim.SetBool("isRunningRight", false);
+                        anim.SetBool("isRunningLeft", true);
+                    }
+                }
+                else
+                {
+                    if (movement.y > 0)
+                    {
+                        anim.SetBool("isRunningUp", true);
+                        anim.SetBool("isRunningDown", false);
+                    }
+                    else
+                    {
+                        anim.SetBool("isRunningUp", false);
+                        anim.SetBool("isRunningDown", true);
+                    }
+                }
+            }
         }
 
         //mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
     }
+
     private void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * movementSpeed * Time.fixedDeltaTime);
@@ -98,12 +115,12 @@ public class PlayerMovement : MonoBehaviour
 
     public void DashRoll()
     {
-        movementSpeed += 15;
+        movementSpeed += 3;
     }
 
     public void EndDashRoll()
     {
-        movementSpeed -= 15;
+        movementSpeed -= 3;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
