@@ -15,6 +15,7 @@ public class DeathTransition : MonoBehaviour
     [SerializeField] private float centerXIncreaseRate;
     [SerializeField] private float howLongToReachEndCenterX;
     [SerializeField] private float opacityIncreaseRate;
+    [SerializeField] private float timeToLastTransition = 1;
 
     private bool transitionInProgress = false;
     private bool transitionFinish = false;
@@ -46,8 +47,6 @@ public class DeathTransition : MonoBehaviour
         {
             elapsedTime += Time.deltaTime;
             float t = elapsedTime / howLongToReachEndCenterX;
-
-            // Apply the easing function to t
             t = EaseInOut(t);
 
             globalVolume.profile.TryGet(out LensDistortion lensDistortion);
@@ -55,7 +54,6 @@ public class DeathTransition : MonoBehaviour
             yield return null;
         }
 
-        // Increase opacity of the portal
         while (portal.color.a < 1)
         {
             Color newColor = portal.color;
@@ -64,27 +62,21 @@ public class DeathTransition : MonoBehaviour
             yield return null;
         }
 
-        // Decrease the volume weight
         while (globalVolume.weight > 0)
         {
             globalVolume.weight -= weightIncreaseRate * Time.deltaTime;
             yield return null;
         }
 
-        //// Wait for 2 seconds
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(timeToLastTransition);
         while (globalVolume.weight < volumeWeight)
         {
             globalVolume.weight += weightIncreaseRate * Time.deltaTime;
             yield return null;
         }
-        //enabled = false;
-        //// Reset the flag to allow the transition to start again
-        //transitionFinish = true;
 
         Debug.Log("here");
 
-        // Exit the coroutine after the last Debug.Log
         yield break;
     }
 

@@ -1493,6 +1493,55 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d31ecf75e3895a4d84a7d8e40f9ad4f, type: 3}
+--- !u!1 &880716065
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 880716067}
+  - component: {fileID: 880716066}
+  m_Layer: 0
+  m_Name: ItemSpawnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &880716066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880716065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ec33dec13abee24389f317dc4646c86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 3652930685800225311, guid: 519c1d50effea9c44a491e58d5eb1344, type: 3}
+  player: {fileID: 1496863860}
+  timeBeforeSpawn: 3
+  maxXSpawnCoord: 4
+  maxYSpawnCoord: 4
+--- !u!4 &880716067
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880716065}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &947218370
 GameObject:
   m_ObjectHideFlags: 0
@@ -1685,14 +1734,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1115827435}
-  - component: {fileID: 1115827436}
   m_Layer: 0
   m_Name: GameObject (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1115827435
 Transform:
   m_ObjectHideFlags: 0
@@ -1713,23 +1761,6 @@ Transform:
   m_Father: {fileID: 1544245193}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1115827436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1115827434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 706dc5fccb888264ca55b42e2490adfe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outerSaw: {fileID: 1759311138}
-  innerSaw: {fileID: 1189508764}
-  timeToPhase2: 3
-  timeToPhase3: 8
-  phase2RotateSpeed: 80
 --- !u!1 &1133463513
 GameObject:
   m_ObjectHideFlags: 0
@@ -2029,6 +2060,7 @@ GameObject:
   - component: {fileID: 1496863854}
   - component: {fileID: 1496863858}
   - component: {fileID: 1496863859}
+  - component: {fileID: 1496863860}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2046,7 +2078,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2187,6 +2219,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1496863860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496863853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4e38fa2be017d548a5251d45d9592c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 0}
+  boss: {fileID: 1544245200}
 --- !u!1 &1539310511
 GameObject:
   m_ObjectHideFlags: 0
@@ -2352,7 +2398,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 315565045}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 18382259387b1934a92a5ea4b5a92215, type: 3}
   m_Name: 
@@ -2367,7 +2413,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 315565045}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb53a9e3639269c43945c2ebcc9c6e08, type: 3}
   m_Name: 
@@ -2383,6 +2429,40 @@ MonoBehaviour:
   - {fileID: 491144498}
   moveSpeed: 15
   chainSpeed: 15
+--- !u!114 &1544245200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315565045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1db030c9a9a54bd4fae6c55b38e02ab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grapplingSkill: {fileID: 1544245199}
+  sawSkill: {fileID: 1544245201}
+  sawGO: {fileID: 1115827434}
+  chakramSkill: {fileID: 1544245197}
+  hitCount: 0
+--- !u!114 &1544245201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315565045}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 706dc5fccb888264ca55b42e2490adfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outerSaw: {fileID: 1759311138}
+  innerSaw: {fileID: 1189508764}
+  timeToPhase2: 3
+  timeToPhase3: 8
+  phase2RotateSpeed: 80
 --- !u!1 &1621024000
 GameObject:
   m_ObjectHideFlags: 0

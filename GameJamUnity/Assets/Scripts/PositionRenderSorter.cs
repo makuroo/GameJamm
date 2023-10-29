@@ -32,7 +32,7 @@ public class PositionRenderSorter : MonoBehaviour
         if (timer <= 0)
         {
             timer = timerMax;
-            myRenderer.sortingOrder = (int)(sortingLayerBase - transform.position.y);
+            myRenderer.sortingOrder = (int)(sortingLayerBase - transform.position.y - offset);
             if (runOnlyOnce)
                 Destroy(this);
         }
