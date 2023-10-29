@@ -44,42 +44,63 @@ public class PlayerMovement : MonoBehaviour
 
         bool isMoving = movement.magnitude > 0.1f;
         anim.SetBool("isRunning", isMoving);
-
-        if (isMoving)
+        if (Input.GetKey(KeyCode.W) && (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)))
         {
-            bool isVerticalMovement = Mathf.Abs(movement.y) > Mathf.Abs(movement.x);
-
-            if (isVerticalMovement)
+            anim.SetBool("isRunningUp", false);
+            anim.SetBool("isRunningDown", false);
+            anim.SetBool("isRunningDiagonal", true);
+        }
+        else
+        {
+            if (Mathf.Abs(movement.x) > 0.1f || Mathf.Abs(movement.y) > 0.1f)
             {
-                if (movement.y > 0)
+                if (Mathf.Abs(movement.x) > Mathf.Abs(movement.y))
                 {
-                    anim.SetBool("isRunningUp", true);
+                    anim.SetBool("isRunningUp", false);
                     anim.SetBool("isRunningDown", false);
                     anim.SetBool("isRunningDiagonal", false);
+
+                    if (movement.x > 0)
+                    {
+                        anim.SetBool("isRunningRight", true);
+                        anim.SetBool("isRunningLeft", false);
+                    }
+                    else
+                    {
+                        anim.SetBool("isRunningRight", false);
+                        anim.SetBool("isRunningLeft", true);
+                    }
                 }
                 else
                 {
-                    anim.SetBool("isRunningUp", false);
-                    anim.SetBool("isRunningDown", true);
-                    anim.SetBool("isRunningDiagonal", false);
+                    anim.SetBool("isRunningRight", false);
+                    anim.SetBool("isRunningLeft", false);
+
+                    if (movement.y > 0)
+                    {
+                        anim.SetBool("isRunningUp", true);
+                        anim.SetBool("isRunningDown", false);
+                    }
+                    else
+                    {
+                        anim.SetBool("isRunningUp", false);
+                        anim.SetBool("isRunningDown", true);
+                    }
                 }
             }
             else
             {
                 anim.SetBool("isRunningUp", false);
                 anim.SetBool("isRunningDown", false);
-                anim.SetBool("isRunningDiagonal", true);
+                anim.SetBool("isRunningRight", false);
+                anim.SetBool("isRunningLeft", false);
+                anim.SetBool("isRunningDiagonal", false);
             }
-        }
-        else
-        {
-            anim.SetBool("isRunningUp", false);
-            anim.SetBool("isRunningDown", false);
-            anim.SetBool("isRunningDiagonal", false);
         }
 
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
     }
+
     private void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * movementSpeed * Time.fixedDeltaTime);
