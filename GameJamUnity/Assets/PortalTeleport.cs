@@ -12,16 +12,25 @@ public class PortalTeleport : MonoBehaviour
     {
         if (collision.CompareTag("Portal"))
         {
-            if (PlayerPrefs.GetInt("HasBall") == 1)
+            if(SceneManager.GetActiveScene().name == "Lab_2023")
             {
-                transition.targetScene = "Monster_1";
+                if (PlayerPrefs.GetInt("HasBall") == 1)
+                {
+                    transition.targetScene = "Monster_1";
+                    transition.StartCoroutine(transition.StartTransition());
+                }
+                else
+                {
+                    transition.targetScene = "Lab_2030";
+                    transition.StartCoroutine(transition.StartTransition());
+                }
+            }
+            else if(SceneManager.GetActiveScene().name == "Lab_2030")
+            {
+                transition.targetScene = "Lab_2023";
                 transition.StartCoroutine(transition.StartTransition());
             }
-            else
-            {
-                transition.targetScene = "Lab_2030";
-                transition.StartCoroutine(transition.StartTransition());
-            }
+
         }
     }
 }
