@@ -8,6 +8,8 @@ TagManager:
   - Sawblade
   - Enemy
   - Chakram
+  - Item
+  - Portal
   layers:
   - Default
   - TransparentFX
