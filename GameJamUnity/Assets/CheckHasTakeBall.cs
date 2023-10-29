@@ -19,7 +19,7 @@ public class CheckHasTakeBall : MonoBehaviour
             transform.GetChild(0).gameObject.SetActive(true);
         }   
 
-        if(isInBallHolder==true && (!PlayerPrefs.HasKey("HasPutBall") || PlayerPrefs.GetInt("HasPutBall") == 0))
+        if(isInBallHolder == true && (!PlayerPrefs.HasKey("HasPutBall") || PlayerPrefs.GetInt("HasPutBall") == 0) && PlayerPrefs.GetInt("HasBall")==1)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
