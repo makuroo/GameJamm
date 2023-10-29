@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private Animator anim;
     private float lastRollTime = 0f;
-    private bool isRolling = false;
+    public bool isRolling = false;
     [SerializeField] private float rollCooldown = 0f;
     [SerializeField] private Rigidbody2D rb;
     public float movementSpeed = 5;
