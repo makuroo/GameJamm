@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 99e6603a4269a624991962889c274f9e
+guid: fdfe45b3a48f7314bb9cedcc260c641b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -102,7 +102,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: astro1.4-Sheet1_0
+      name: boss1-Sheet_0
       rect:
         serializedVersion: 2
-        x: 33
-        y: 20
-        width: 45
-        height: 64
+        x: 55
+        y: 36
+        width: 148
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e94b75d2c53be14d8ee24687af7e7df
-      internalID: -2027890068
+      spriteID: fdfb8387586a7f74e818575dfcef020d
+      internalID: -497103265
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: astro1.4-Sheet1_1
+      name: boss1-Sheet_1
       rect:
         serializedVersion: 2
-        x: 144
-        y: 18
-        width: 45
-        height: 68
+        x: 308
+        y: 33
+        width: 157
+        height: 141
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d9193f730f32654ea6622485aa4b98b
-      internalID: 1323209080
+      spriteID: 18a9317fee8fdd74e83b8c9857809215
+      internalID: 726868224
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: astro1.4-Sheet1_2
+      name: boss1-Sheet_2
       rect:
         serializedVersion: 2
-        x: 255
-        y: 16
-        width: 45
-        height: 69
+        x: 567
+        y: 34
+        width: 148
+        height: 141
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af5a6e232bda1ba4c9dcd856ddf1cd54
-      internalID: -101247439
+      spriteID: 4bf8f4fde513f3e44aef3c9875d1c485
+      internalID: -1623552055
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: astro1.4-Sheet1_3
+      name: boss1-Sheet_3
       rect:
         serializedVersion: 2
-        x: 364
-        y: 18
-        width: 53
-        height: 65
+        x: 846
+        y: 36
+        width: 104
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5116c45638c19443b219cb11ede0468
-      internalID: -1781597044
+      spriteID: 69944fab2078da84d8cc6dd7f3c65fb3
+      internalID: 1809495378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: astro1.4-Sheet1_4
+      name: boss1-Sheet_4
       rect:
         serializedVersion: 2
-        x: 479
-        y: 18
-        width: 50
-        height: 68
+        x: 1065
+        y: 36
+        width: 145
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d4c07d9a9506d04d95e765b29bf4807
-      internalID: 1229549865
+      spriteID: 8bfd77b772ecef74c9669494caef2462
+      internalID: 496318095
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: astro1.4-Sheet1_5
+      name: boss1-Sheet_5
       rect:
         serializedVersion: 2
-        x: 591
-        y: 16
-        width: 45
-        height: 69
+        x: 1328
+        y: 34
+        width: 156
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,8 +236,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a34fcb2bb30611b418e1975896c57457
-      internalID: 964115149
+      spriteID: c901abd89a952f7449441cea4f56cf0b
+      internalID: -1739798555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss1-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 36
+        width: 138
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 517bf75c358bded4894e20352d47b3cb
+      internalID: -281660024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss1-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1867
+        y: 36
+        width: 105
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 454c48151aedf5045977120d934d0ce7
+      internalID: 898946845
       vertices: []
       indices: 
       edges: []
@@ -253,12 +295,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      astro1.4-Sheet1_0: -2027890068
-      astro1.4-Sheet1_1: 1323209080
-      astro1.4-Sheet1_2: -101247439
-      astro1.4-Sheet1_3: -1781597044
-      astro1.4-Sheet1_4: 1229549865
-      astro1.4-Sheet1_5: 964115149
+      boss1-Sheet_0: -497103265
+      boss1-Sheet_1: 726868224
+      boss1-Sheet_2: -1623552055
+      boss1-Sheet_3: 1809495378
+      boss1-Sheet_4: 496318095
+      boss1-Sheet_5: -1739798555
+      boss1-Sheet_6: -281660024
+      boss1-Sheet_7: 898946845
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
