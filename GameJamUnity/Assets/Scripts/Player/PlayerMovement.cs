@@ -44,22 +44,32 @@ public class PlayerMovement : MonoBehaviour
 
         bool isMoving = movement.magnitude > 0.1f;
         anim.SetBool("isRunning", isMoving);
+
         if (Input.GetKey(KeyCode.W) && (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)))
         {
             anim.SetBool("isRunningUp", false);
             anim.SetBool("isRunningDown", false);
             anim.SetBool("isRunningDiagonal", true);
+            anim.SetBool("isRunningDiagonalDown", false);
+        }
+        else if ((Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D)) || (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.D)))
+        {
+            anim.SetBool("isRunningUp", false);
+            anim.SetBool("isRunningDown", false);
+            anim.SetBool("isRunningDiagonal", false);
+            anim.SetBool("isRunningDiagonalDown", true);
         }
         else
         {
+            anim.SetBool("isRunningUp", false);
+            anim.SetBool("isRunningDown", false);
+            anim.SetBool("isRunningDiagonal", false);
+            anim.SetBool("isRunningDiagonalDown", false);
+
             if (Mathf.Abs(movement.x) > 0.1f || Mathf.Abs(movement.y) > 0.1f)
             {
                 if (Mathf.Abs(movement.x) > Mathf.Abs(movement.y))
                 {
-                    anim.SetBool("isRunningUp", false);
-                    anim.SetBool("isRunningDown", false);
-                    anim.SetBool("isRunningDiagonal", false);
-
                     if (movement.x > 0)
                     {
                         anim.SetBool("isRunningRight", true);
@@ -73,9 +83,6 @@ public class PlayerMovement : MonoBehaviour
                 }
                 else
                 {
-                    anim.SetBool("isRunningRight", false);
-                    anim.SetBool("isRunningLeft", false);
-
                     if (movement.y > 0)
                     {
                         anim.SetBool("isRunningUp", true);
@@ -87,14 +94,6 @@ public class PlayerMovement : MonoBehaviour
                         anim.SetBool("isRunningDown", true);
                     }
                 }
-            }
-            else
-            {
-                anim.SetBool("isRunningUp", false);
-                anim.SetBool("isRunningDown", false);
-                anim.SetBool("isRunningRight", false);
-                anim.SetBool("isRunningLeft", false);
-                anim.SetBool("isRunningDiagonal", false);
             }
         }
 
