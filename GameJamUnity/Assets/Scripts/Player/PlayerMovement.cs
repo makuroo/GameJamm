@@ -98,7 +98,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+        //mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
     }
 
     private void FixedUpdate()
