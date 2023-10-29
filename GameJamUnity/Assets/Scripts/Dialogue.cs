@@ -7,7 +7,7 @@ public class Dialogue : MonoBehaviour
 {
     public float typingSpeed = 0.1f; // Adjust the speed of typing
 
-    private TMP_Text textComponent;
+    public TMP_Text textComponent;
     private string fullText;
     private bool isTyping = false;
     private int characterIndex;
