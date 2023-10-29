@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public float movementSpeed = 5;
     [SerializeField] private Camera cam;
     private bool facingRight = true;
-
+    public AudioSource jalan;
     Vector2 movement;
     Vector2 mousePos;
 
@@ -129,6 +129,11 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = Vector2.zero;
         }
+    }
+
+    public void walksound()
+    {
+        jalan.Play();
     }
 
     private void StartRoll()
