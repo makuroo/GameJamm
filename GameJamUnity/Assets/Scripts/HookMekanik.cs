@@ -10,9 +10,13 @@ public class HookMekanik : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float chainSpeed = 5f;
     private LineRenderer lr;
+    private SpriteRenderer spriteRenderer;
+    public Sprite[] frames;
+
 
     void Start()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
         lr = gameObject.AddComponent<LineRenderer>();
         lr.startWidth = 0.1f;
         lr.endWidth = 0.1f;
@@ -20,7 +24,24 @@ public class HookMekanik : MonoBehaviour
 
         StartCoroutine(InstantiateChainWithCooldown());
     }
+    void Update()
+    {
+        if (player != null)
+        {
+            Vector3 direction = player.transform.position - transform.position;
+            float angle = Mathf.Atan2(-direction.y, direction.x) * Mathf.Rad2Deg;
 
+            if (angle < 0)
+                angle += 360;
+
+            int frame = Mathf.FloorToInt((angle + 22.5f) / 45) % 8;
+
+            if (frame >= 0 && frame < frames.Length)
+            {
+                spriteRenderer.sprite = frames[frame];
+            }
+        }
+    }
     void UpdateLineRenderer(Vector3 startPos, Vector3 endPos)
     {
         lr.SetPosition(0, startPos);
