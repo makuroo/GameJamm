@@ -78,7 +78,7 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("isRunningDiagonal", false);
         }
 
-        mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+        //mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
     }
     private void FixedUpdate()
     {
