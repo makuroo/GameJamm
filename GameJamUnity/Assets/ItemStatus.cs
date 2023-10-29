@@ -30,7 +30,7 @@ public class ItemStatus : MonoBehaviour
         {
             item = collision.gameObject;
             item.transform.SetParent(transform);
-            item.transform.localPosition = new Vector2(0, 1.5f);
+            item.transform.localPosition = new Vector2(0, 1f);
         }
     }
 
