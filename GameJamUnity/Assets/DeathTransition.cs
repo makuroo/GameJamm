@@ -4,6 +4,7 @@ using UnityEngine.Rendering;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.SceneManagement;
 
 public class DeathTransition : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class DeathTransition : MonoBehaviour
     [SerializeField] private float howLongToReachEndCenterX;
     [SerializeField] private float opacityIncreaseRate;
     [SerializeField] private float timeToLastTransition = 1;
+    public string targetScene;
 
     private bool transitionInProgress = false;
     private bool transitionFinish = false;
@@ -31,7 +33,7 @@ public class DeathTransition : MonoBehaviour
             StopCoroutine(StartTransition());
     }
 
-    private IEnumerator StartTransition()
+    public IEnumerator StartTransition()
     {
         transitionInProgress = true;
 
@@ -75,7 +77,7 @@ public class DeathTransition : MonoBehaviour
             yield return null;
         }
 
-        Debug.Log("here");
+        SceneManager.LoadScene(targetScene);
 
         yield break;
     }

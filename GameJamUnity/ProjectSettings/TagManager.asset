@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Chakram
   - Item
+  - Portal
   layers:
   - Default
   - TransparentFX
