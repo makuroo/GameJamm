@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
 
 public class PhaseController : MonoBehaviour
 {
@@ -8,8 +10,11 @@ public class PhaseController : MonoBehaviour
     [SerializeField] private SawSkillController sawSkill;
     [SerializeField] private GameObject sawGO;
     [SerializeField] private SpawnChakram chakramSkill;
+    [SerializeField] private GameObject tbc;
+    public PlayableDirector timeline;
+    
     public int hitCount = 0;
-
+    
     private void Update()
     {
         if (hitCount == 1)
@@ -30,6 +35,17 @@ public class PhaseController : MonoBehaviour
             sawGO.SetActive(true);
             sawSkill.enabled = true;
         }
+        if(hitCount == 4)
+        {
+            tbc.SetActive(true);
+           // timeline.Play();
+
+            Invoke("sceneganti", 2f);
+        }
     }
 
+    public void sceneganti()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
