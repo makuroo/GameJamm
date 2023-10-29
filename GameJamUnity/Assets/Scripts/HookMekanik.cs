@@ -52,7 +52,7 @@ public class HookMekanik : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(5f);
+            yield return new WaitForSeconds(2f);
             GameObject closestTree = FindClosestTree();
             if (closestTree != null)
             {
