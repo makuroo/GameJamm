@@ -30,6 +30,9 @@ public class PuzzleController : MonoBehaviour
     private KeyCode[] excludedKeys = { KeyCode.W, KeyCode.A, KeyCode.S, KeyCode.D};
 
     public PlayerMovement playerMovementScript;
+    public GameObject tempatBolaKosong;
+    public GameObject tempatBolaAda;
+    public bool isWin;
 
     public void StartThePuzzle()
     {
@@ -53,7 +56,7 @@ public class PuzzleController : MonoBehaviour
                 nodesUrutanLight[currentIndex - 1].GetComponent<Light2D>().intensity = 0;
             }
 
-            nodesUrutanLight[currentIndex].GetComponent<Light2D>().intensity = 1;
+            nodesUrutanLight[currentIndex].GetComponent<Light2D>().intensity = 3;
 
             currentIndex++;
         }
@@ -71,7 +74,7 @@ public class PuzzleController : MonoBehaviour
     {
         foreach (GameObject nodes in nodes)
         {
-            nodes.GetComponent<Light2D>().intensity = 1;
+            nodes.GetComponent<Light2D>().intensity = 3;
             nodes.GetComponent<Light2D>().color = lightColor;
         }
     }
@@ -104,7 +107,7 @@ public class PuzzleController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.W) && excludedKeys.Where(key => key != KeyCode.W).All(key => !Input.GetKey(key)))
             {
-                nodes[0].GetComponent<Light2D>().intensity = 1.5f;
+                nodes[0].GetComponent<Light2D>().intensity = 3f;
                 if (!diGembok[0])
                 {
                     diGembok[0] = true;
@@ -117,7 +120,7 @@ public class PuzzleController : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.W) && Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.W) && Input.GetKeyDown(KeyCode.D))
             {
-                nodes[1].GetComponent<Light2D>().intensity = 1.5f;
+                nodes[1].GetComponent<Light2D>().intensity = 3f;
                 if (!diGembok[1])
                 {
                     diGembok[1] = true;
@@ -130,7 +133,7 @@ public class PuzzleController : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.D) && excludedKeys.Where(key => key != KeyCode.D).All(key => !Input.GetKey(key)))
             {
-                nodes[2].GetComponent<Light2D>().intensity = 1.5f;
+                nodes[2].GetComponent<Light2D>().intensity = 3f;
                 if (!diGembok[2])
                 {
                     diGembok[2] = true;
@@ -143,7 +146,7 @@ public class PuzzleController : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.S) && Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.S) && Input.GetKeyDown(KeyCode.D))
             {
-                nodes[3].GetComponent<Light2D>().intensity = 1.5f;
+                nodes[3].GetComponent<Light2D>().intensity = 3f;
                 if (!diGembok[3])
                 {
                     diGembok[3] = true;
@@ -156,7 +159,7 @@ public class PuzzleController : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.S) && excludedKeys.Where(key => key != KeyCode.S).All(key => !Input.GetKey(key)))
             {
-                nodes[4].GetComponent<Light2D>().intensity = 1.5f;
+                nodes[4].GetComponent<Light2D>().intensity = 3f;
                 if (!diGembok[4])
                 {
                     diGembok[4] = true;
@@ -169,7 +172,7 @@ public class PuzzleController : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.S) && Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) && Input.GetKeyDown(KeyCode.A))
             {
-                nodes[5].GetComponent<Light2D>().intensity = 1.5f;
+                nodes[5].GetComponent<Light2D>().intensity = 3f;
                 if (!diGembok[5])
                 {
                     diGembok[5] = true;
@@ -182,7 +185,7 @@ public class PuzzleController : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.A) && excludedKeys.Where(key => key != KeyCode.A).All(key => !Input.GetKey(key)))
             {
-                nodes[6].GetComponent<Light2D>().intensity = 1.5f;
+                nodes[6].GetComponent<Light2D>().intensity = 3f;
                 if (!diGembok[6])
                 {
                     diGembok[6] = true;
@@ -195,7 +198,7 @@ public class PuzzleController : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.W) && Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.W) && Input.GetKeyDown(KeyCode.A))
             {
-                nodes[7].GetComponent<Light2D>().intensity = 1.5f;
+                nodes[7].GetComponent<Light2D>().intensity = 3f;
                 if (!diGembok[7])
                 {
                     diGembok[7] = true;
@@ -258,6 +261,9 @@ public class PuzzleController : MonoBehaviour
             isInputActive = false;
             gembokWin= true;
             playerMovementScript.movementSpeed = 2f;
+            tempatBolaKosong.SetActive(false);
+            tempatBolaAda.SetActive(true);
+            isWin = true;
         }
     }
 

@@ -7,6 +7,17 @@ public class PuzzleCollider : MonoBehaviour
 
     public PuzzleController puzzleControllerScript;
     public GameObject space;
+    public bool gembok = true;
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && !gembok)
+        {
+            Debug.Log("Space Pressed while treadmill");
+            puzzleControllerScript.StartThePuzzle();
+            gameObject.SetActive(false);
+            space.SetActive(false);
+        }
+    }
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -14,13 +25,7 @@ public class PuzzleCollider : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             space.SetActive(true);
-
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                puzzleControllerScript.StartThePuzzle();
-                gameObject.SetActive(false);
-                space.SetActive(false);
-            }
+            gembok = false;
         }
     }
 
@@ -29,6 +34,7 @@ public class PuzzleCollider : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             space.SetActive(false);
+            gembok = true;
         }
     }
 
