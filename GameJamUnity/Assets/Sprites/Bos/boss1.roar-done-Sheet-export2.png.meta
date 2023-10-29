@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fdfe45b3a48f7314bb9cedcc260c641b
+guid: 0c3dcd7c2518efd408b587ddfacf6d51
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -102,18 +102,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -129,55 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: boss1-Sheet_0
+      name: boss1.roar-done-Sheet-export2_0
       rect:
         serializedVersion: 2
-        x: 55
-        y: 36
-        width: 148
-        height: 139
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fdfb8387586a7f74e818575dfcef020d
-      internalID: -497103265
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: boss1-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 308
-        y: 33
-        width: 157
-        height: 141
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 18a9317fee8fdd74e83b8c9857809215
-      internalID: 726868224
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: boss1-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 567
+        x: 14
         y: 34
-        width: 148
-        height: 141
+        width: 217
+        height: 145
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,62 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bf8f4fde513f3e44aef3c9875d1c485
-      internalID: -1623552055
+      spriteID: 2456110c9fc626f4d8ed15abb39d5d99
+      internalID: -1421837575
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boss1-Sheet_3
+      name: boss1.roar-done-Sheet-export2_1
       rect:
         serializedVersion: 2
-        x: 846
-        y: 36
-        width: 104
-        height: 139
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 69944fab2078da84d8cc6dd7f3c65fb3
-      internalID: 1809495378
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: boss1-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 1065
-        y: 36
-        width: 145
-        height: 139
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8bfd77b772ecef74c9669494caef2462
-      internalID: 496318095
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: boss1-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 1328
+        x: 270
         y: 34
-        width: 156
-        height: 140
+        width: 216
+        height: 142
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c901abd89a952f7449441cea4f56cf0b
-      internalID: -1739798555
+      spriteID: a5253e70f19c2b848bd4c6490a455f8e
+      internalID: -227648003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boss1-Sheet_6
+      name: boss1.roar-done-Sheet-export2_2
       rect:
         serializedVersion: 2
-        x: 1590
-        y: 36
-        width: 138
-        height: 139
+        x: 526
+        y: 34
+        width: 217
+        height: 145
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 517bf75c358bded4894e20352d47b3cb
-      internalID: -281660024
+      spriteID: 40e367fb332675d4f9ef43997076c853
+      internalID: -393205645
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boss1-Sheet_7
+      name: boss1.roar-done-Sheet-export2_3
       rect:
         serializedVersion: 2
-        x: 1867
-        y: 36
-        width: 105
-        height: 139
+        x: 782
+        y: 34
+        width: 216
+        height: 142
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,8 +194,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 454c48151aedf5045977120d934d0ce7
-      internalID: 898946845
+      spriteID: d4a5530f3d3eed445900c7b63cc2c424
+      internalID: 109817080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss1.roar-done-Sheet-export2_4
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 34
+        width: 217
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ed347f192c34164996756c63b188f74
+      internalID: -1834588658
       vertices: []
       indices: 
       edges: []
@@ -307,14 +232,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      boss1-Sheet_0: -497103265
-      boss1-Sheet_1: 726868224
-      boss1-Sheet_2: -1623552055
-      boss1-Sheet_3: 1809495378
-      boss1-Sheet_4: 496318095
-      boss1-Sheet_5: -1739798555
-      boss1-Sheet_6: -281660024
-      boss1-Sheet_7: 898946845
+      boss1.roar-done-Sheet-export2_0: -1421837575
+      boss1.roar-done-Sheet-export2_1: -227648003
+      boss1.roar-done-Sheet-export2_2: -393205645
+      boss1.roar-done-Sheet-export2_3: 109817080
+      boss1.roar-done-Sheet-export2_4: -1834588658
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
