@@ -51,6 +51,3 @@ TagManager:
   - name: Portal
     uniqueID: 1274850233
     locked: 0
-  - name: fx
-    uniqueID: 4177492097
-    locked: 0

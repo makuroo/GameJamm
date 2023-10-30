@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d37b9797ff8508e46a37e1dd6eec878d
+guid: 8e61b487eababa84fb99aa9d90dee73d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -102,7 +102,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Android
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tilemapalllab_damaged_0
+      name: npc1-Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
-        width: 64
-        height: 64
+        x: 33
+        y: 16
+        width: 54
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5572c7e6b3b282d489b37a2d2e329277
-      internalID: -938860848
+      spriteID: cecefb2e532817044a0a944787f36f19
+      internalID: 2137282341
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemapalllab_damaged_1
+      name: npc1-Sheet_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
+        x: 161
+        y: 16
+        width: 54
+        height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1deaf678a41825c4e88566bac2c588af
-      internalID: -1343493747
+      spriteID: e4e9b829bb2ee0144a019f8f2675215b
+      internalID: -523320437
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemapalllab_damaged_2
+      name: npc1-Sheet_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 64
-        width: 64
-        height: 64
+        x: 289
+        y: 16
+        width: 54
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98503ab4f3e32974da0ef19e32623b67
-      internalID: -231907584
+      spriteID: 03d15354034270a46afbf6469cd13259
+      internalID: 2082344039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemapalllab_damaged_3
+      name: npc1-Sheet_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 64
-        width: 64
-        height: 64
+        x: 417
+        y: 16
+        width: 54
+        height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eeeca31704bf0ef48be077a19cb61f70
-      internalID: -1724400537
+      spriteID: 002152ac274916d429eb1792b372dabd
+      internalID: -859031741
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemapalllab_damaged_4
+      name: npc1-Sheet_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 64
-        width: 64
-        height: 64
+        x: 545
+        y: 16
+        width: 54
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d18652dd98b2ae48ab500aa43148a97
-      internalID: -573520202
+      spriteID: 6f5ea7b46a870134d8e930f3961e4dd5
+      internalID: -1092858344
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemapalllab_damaged_5
+      name: npc1-Sheet_5
       rect:
         serializedVersion: 2
-        x: 320
-        y: 64
-        width: 64
-        height: 64
+        x: 673
+        y: 16
+        width: 54
+        height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,20 +236,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0b61b7802456bb4f99d0db0977b5c3d
-      internalID: -1716666303
+      spriteID: 10b17dddca125124c9637d0f3017d524
+      internalID: 518201726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemapalllab_damaged_6
+      name: npc1-Sheet_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
+        x: 801
+        y: 16
+        width: 54
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,20 +257,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 715a0a5682121d041bcebb75d678173e
-      internalID: -461950989
+      spriteID: afb2e570bd9ce784d83d4dc779a5e9d1
+      internalID: -1694938897
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemapalllab_damaged_7
+      name: npc1-Sheet_7
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
+        x: 929
+        y: 16
+        width: 54
+        height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,20 +278,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b060244758a70e45aa783862f33afe4
-      internalID: -499788375
+      spriteID: 5543586a79cf4b4468cac9fd75041313
+      internalID: -646428865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemapalllab_damaged_8
+      name: npc1-Sheet_8
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 64
-        height: 64
+        x: 1057
+        y: 16
+        width: 54
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,71 +299,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40983ad6aa87afc4083a8666f8ec3765
-      internalID: 415714369
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tilemapalllab_damaged_9
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29dd169c5be32aa418c2544f28b0cd50
-      internalID: 1817745064
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tilemapalllab_damaged_10
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0329fdd07006ffd44ab2ee58fe0c5940
-      internalID: -2109869300
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tilemapalllab_damaged_11
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 589bd54849d79f54da401b58e9aa9d85
-      internalID: -637218734
+      spriteID: a47e0ad5424918e45b3407b744a68649
+      internalID: 841105819
       vertices: []
       indices: 
       edges: []
@@ -379,18 +316,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      tilemapalllab_damaged_0: -938860848
-      tilemapalllab_damaged_1: -1343493747
-      tilemapalllab_damaged_10: -2109869300
-      tilemapalllab_damaged_11: -637218734
-      tilemapalllab_damaged_2: -231907584
-      tilemapalllab_damaged_3: -1724400537
-      tilemapalllab_damaged_4: -573520202
-      tilemapalllab_damaged_5: -1716666303
-      tilemapalllab_damaged_6: -461950989
-      tilemapalllab_damaged_7: -499788375
-      tilemapalllab_damaged_8: 415714369
-      tilemapalllab_damaged_9: 1817745064
+      npc1-Sheet_0: 2137282341
+      npc1-Sheet_1: -523320437
+      npc1-Sheet_2: 2082344039
+      npc1-Sheet_3: -859031741
+      npc1-Sheet_4: -1092858344
+      npc1-Sheet_5: 518201726
+      npc1-Sheet_6: -1694938897
+      npc1-Sheet_7: -646428865
+      npc1-Sheet_8: 841105819
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

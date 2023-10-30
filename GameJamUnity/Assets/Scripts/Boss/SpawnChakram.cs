@@ -8,7 +8,7 @@ public class SpawnChakram : MonoBehaviour
     [SerializeField] private float chakramSpeed = 2f;
     [SerializeField] private GameObject player;
     private GameObject spawnedChakram;
-    private float cooldownTimer = 3f;
+    private float cooldownTimer = 10f;
 
     void Start()
     {
@@ -23,9 +23,7 @@ public class SpawnChakram : MonoBehaviour
         {
             spawnedChakram = Instantiate(chakramPrefab, transform.position, Quaternion.identity);
             StartCoroutine(ChakramBehavior());
-
             cooldownTimer = 2f;
-
         }
     }
 

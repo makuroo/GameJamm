@@ -6,7 +6,6 @@ public class ItemStatus : MonoBehaviour
 {
     public GameObject item;
     [SerializeField] private PhaseController boss;
-    [SerializeField] private ParticleSystem fx;
     private void Update()
     {
         if (item != null)
@@ -19,8 +18,6 @@ public class ItemStatus : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            fx.gameObject.transform.position = this.gameObject.transform.position;
-            fx.Play();
             boss.hitCount++;
             Destroy(item);
         }
