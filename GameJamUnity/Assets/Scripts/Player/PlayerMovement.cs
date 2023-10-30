@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     public float movementSpeed = 5;
     [SerializeField] private Camera cam;
+    private ItemStatus item;
     private bool facingRight = true;
     public AudioSource jalan;
     Vector2 movement;
@@ -19,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        item = GetComponent<ItemStatus>();
     }
 
     void Update()
@@ -31,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (currentTime - lastRollTime >= rollCooldown)
         {
-            if (Input.GetKeyDown(KeyCode.Space) && !isRolling)
+            if (Input.GetKeyDown(KeyCode.Space) && !isRolling && !item.holdingBall)
             {
                 StartRoll();
                 lastRollTime = currentTime;

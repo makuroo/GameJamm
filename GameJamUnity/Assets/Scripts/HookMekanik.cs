@@ -18,8 +18,8 @@ public class HookMekanik : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         lr = gameObject.AddComponent<LineRenderer>();
-        lr.startWidth = 0.1f;
-        lr.endWidth = 0.1f;
+        lr.startWidth = 0.5f;
+        lr.endWidth = 0.5f;
         lr.positionCount = 2;
 
         StartCoroutine(InstantiateChainWithCooldown());
