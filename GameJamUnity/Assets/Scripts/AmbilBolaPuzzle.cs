@@ -14,11 +14,6 @@ public class AmbilBolaPuzzle : MonoBehaviour
     [SerializeField]
     private int hasBallBall;
 
-    private void Start() //NANTI DIAPUS WAJIB
-    {
-        PlayerPrefs.SetInt("HasBall", 0);
-    }
-
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) && !gembok && puzzleControllerScript.isWin == true)

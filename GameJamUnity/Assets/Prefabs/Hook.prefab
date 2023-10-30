@@ -77,7 +77,11 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 248
+<<<<<<< HEAD
   m_Sprite: {fileID: 21300000, guid: 2a47c45bab850b242aed1017f764efc7, type: 3}
+=======
+  m_Sprite: {fileID: 21300000, guid: 82ebf007339aea548a842d63255653ed, type: 3}
+>>>>>>> Richard
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

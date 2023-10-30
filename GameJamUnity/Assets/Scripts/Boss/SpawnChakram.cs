@@ -23,7 +23,11 @@ public class SpawnChakram : MonoBehaviour
         {
             spawnedChakram = Instantiate(chakramPrefab, transform.position, Quaternion.identity);
             StartCoroutine(ChakramBehavior());
+<<<<<<< HEAD
             cooldownTimer = 3f;
+=======
+            cooldownTimer = 2f;
+>>>>>>> Richard
         }
     }
 

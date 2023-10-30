@@ -20,14 +20,14 @@ public class PuzzleController : MonoBehaviour
     private string playerSequence;
     [SerializeField]
     private string correctSequence;
-    private string[] storageSequence = {"W","A", "D", "S", "SD", "WD", "SA", "WA"}; //KunciJawaban
+    private string[] storageSequence = { "W", "A", "D", "S", "SD", "WD", "SA", "WA" }; //KunciJawaban
     private int storageIndex = 0;
 
     bool[] diGembok = new bool[8];
     bool gembokWin = false;
     [SerializeField]
     private int sequenceScore;
-    private KeyCode[] excludedKeys = { KeyCode.W, KeyCode.A, KeyCode.S, KeyCode.D};
+    private KeyCode[] excludedKeys = { KeyCode.W, KeyCode.A, KeyCode.S, KeyCode.D };
 
     public PlayerMovement playerMovementScript;
     public GameObject tempatBolaKosong;
@@ -216,13 +216,13 @@ public class PuzzleController : MonoBehaviour
 
     private void CheckSequence()
     {
-        if(sequenceScore != 8)
+        if (sequenceScore != 8)
         {
             if (playerSequence == correctSequence)
             {
                 //BETUL SEQUENCE
                 Debug.Log("SequenceBetul");
-                if(storageIndex != storageSequence.Length-1)
+                if (storageIndex != storageSequence.Length - 1)
                 {
                     storageIndex++;
                     correctSequence += storageSequence[storageIndex];
@@ -238,6 +238,7 @@ public class PuzzleController : MonoBehaviour
                 Invoke("DelayInputActive", 10f);
                 InvokeRepeating("LightHintShow", 1f, timeBetweenLights);
                 TextGagalMuncul();
+                isInputActive = false;
 
 
                 for (int i = 0; i < diGembok.Length; i++)
@@ -277,7 +278,7 @@ public class PuzzleController : MonoBehaviour
             Debug.Log("Hooray");
             TurnOnAllLights(Color.green);
             isInputActive = false;
-            gembokWin= true;
+            gembokWin = true;
             playerMovementScript.movementSpeed = 2f;
             tempatBolaKosong.SetActive(false);
             tempatBolaAda.SetActive(true);

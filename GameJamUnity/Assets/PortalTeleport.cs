@@ -14,7 +14,7 @@ public class PortalTeleport : MonoBehaviour
         {
             if(SceneManager.GetActiveScene().name == "Lab_2023")
             {
-                if (PlayerPrefs.GetInt("HasBall") == 1)
+                if (PlayerPrefs.GetInt("HasBall") == 1 && PlayerPrefs.GetInt("HasPutBall") == 1)
                 {
                     transition.targetScene = "Monster_1";
                     transition.StartCoroutine(transition.StartTransition());
@@ -30,7 +30,6 @@ public class PortalTeleport : MonoBehaviour
                 transition.targetScene = "Lab_2023";
                 transition.StartCoroutine(transition.StartTransition());
             }
-
         }
     }
 }
