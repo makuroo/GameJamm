@@ -6,6 +6,9 @@ public class ItemStatus : MonoBehaviour
 {
     public GameObject item;
     [SerializeField] private PhaseController boss;
+    [SerializeField] private GameObject vfx;
+    [SerializeField] private Transform tempatLedak;
+    public bool holdingBall;
     private void Update()
     {
         if (item != null)
@@ -18,8 +21,11 @@ public class ItemStatus : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            GameObject fx = Instantiate(vfx, tempatLedak);
             boss.hitCount++;
             Destroy(item);
+            holdingBall = false;
+            Destroy(fx, 2f);
         }
     }
 
@@ -28,9 +34,10 @@ public class ItemStatus : MonoBehaviour
         Debug.Log(collision);
         if (collision.gameObject.CompareTag("Item"))
         {
+            holdingBall = true;
             item = collision.gameObject;
             item.transform.SetParent(transform);
-            item.transform.localPosition = new Vector2(0, 1.5f);
+            item.transform.localPosition = new Vector2(0, 1f);
         }
     }
 
