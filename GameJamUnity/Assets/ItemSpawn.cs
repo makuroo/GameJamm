@@ -7,8 +7,7 @@ public class ItemSpawn : MonoBehaviour
     [SerializeField] private GameObject item;
     [SerializeField] private ItemStatus player;
     [SerializeField] private float timeBeforeSpawn;
-    [SerializeField] private float maxXSpawnCoord;
-    [SerializeField] private float maxYSpawnCoord;
+    [SerializeField] private Transform[] spawnPos;
     private GameObject spawnedItem;
     private float elapsedTime;
 
@@ -26,10 +25,10 @@ public class ItemSpawn : MonoBehaviour
 
     private void SpawnItem()
     {
-        Vector2 randomSpawnPos = new Vector2(Random.Range(-maxXSpawnCoord, maxYSpawnCoord + 1), Random.Range(-maxYSpawnCoord, maxYSpawnCoord + 1));
+        Vector2 randomSpawnPos = spawnPos[Random.Range(0, spawnPos.Length)].position;
 
         Debug.Log(randomSpawnPos);
-        spawnedItem =  Instantiate(item, randomSpawnPos, Quaternion.identity);
+        spawnedItem = Instantiate(item, randomSpawnPos, Quaternion.identity);
     }
 
 }
