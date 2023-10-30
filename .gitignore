@@ -81,3 +81,6 @@ GameJamUnity/UserSettings/EditorUserSettings.asset
 GameJamUnity/UserSettings/EditorUserSettings.asset
 *.asset
 *.dwlt
+GameJamUnity/UserSettings/EditorUserSettings.asset
+GameJamUnity/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+GameJamUnity/obj/Debug/Assembly-CSharp.csproj.AssemblyReference.cache
