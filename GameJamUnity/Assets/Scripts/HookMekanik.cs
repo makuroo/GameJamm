@@ -9,17 +9,20 @@ public class HookMekanik : MonoBehaviour
     [SerializeField] private GameObject[] trees;
     [SerializeField] private float moveSpeed = 4f;
     [SerializeField] private float chainSpeed = 4f;
+    public GameObject currentChain;
     private LineRenderer lr;
     private SpriteRenderer spriteRenderer;
     public Sprite[] frames;
-
+    public Material mats;
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         lr = gameObject.AddComponent<LineRenderer>();
-        lr.startWidth = 0.5f;
-        lr.endWidth = 0.5f;
+        lr.material = mats;
+        lr.sortingOrder = 15;
+        lr.startWidth = 0.2f;
+        lr.endWidth = 0.2f;
         lr.positionCount = 2;
 
         StartCoroutine(InstantiateChainWithCooldown());
@@ -56,11 +59,29 @@ public class HookMekanik : MonoBehaviour
             GameObject closestTree = FindClosestTree();
             if (closestTree != null)
             {
-                GameObject chainInstance = Instantiate(chainPrefabs, transform.position, Quaternion.identity);
-                Rigidbody2D rb = chainInstance.GetComponent<Rigidbody2D>();
-                rb.velocity = (closestTree.transform.position - transform.position).normalized * chainSpeed;
+                Vector2 dist = closestTree.transform.position - transform.position;
+                Vector3 chainRotation = new Vector3(180,-180,Mathf.Atan2(dist.y, dist.x) * Mathf.Rad2Deg);
+                if (closestTree.transform.position.x > transform.position.x)
+                {
+                    GameObject chainInstance = Instantiate(chainPrefabs, transform.position, Quaternion.Euler(chainRotation));
+                    currentChain = chainInstance;
+                    Rigidbody2D rb = chainInstance.GetComponent<Rigidbody2D>();
+                    rb.velocity = (closestTree.transform.position - transform.position).normalized * chainSpeed;
 
-                StartCoroutine(FreezeChainWhenClose(chainInstance, closestTree));
+                    StartCoroutine(FreezeChainWhenClose(chainInstance, closestTree));
+                }
+                else
+                {
+                    chainRotation.x *= -1;
+                    GameObject chainInstance = Instantiate(chainPrefabs, transform.position, Quaternion.Euler(chainRotation));
+                    currentChain = chainInstance;
+                    Rigidbody2D rb = chainInstance.GetComponent<Rigidbody2D>();
+                    rb.velocity = (closestTree.transform.position - transform.position).normalized * chainSpeed;
+
+                    StartCoroutine(FreezeChainWhenClose(chainInstance, closestTree));
+                }
+                
+
             }
         }
     }

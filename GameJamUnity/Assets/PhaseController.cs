@@ -26,6 +26,9 @@ public class PhaseController : MonoBehaviour
         {
             grapplingSkill.StopAllCoroutines();
             grapplingSkill.enabled = false;
+            Destroy(GetComponent<LineRenderer>());
+            if (grapplingSkill.currentChain != null)
+                Destroy(grapplingSkill.currentChain);
             transform.position = Vector2.zero;
             chakramSkill.enabled = true;
         }

@@ -10,11 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5489762914701790018}
   - component: {fileID: 5981794886075064761}
-  - component: {fileID: 4011901081532456107}
   - component: {fileID: 6423568136849241819}
   - component: {fileID: 364523752462570085}
   - component: {fileID: -6331356218731394257}
-  - component: {fileID: -2102236463396647991}
+  - component: {fileID: 1552101657381841734}
   m_Layer: 0
   m_Name: Chakram
   m_TagString: Chakram
@@ -89,32 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &4011901081532456107
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1550709851672729150}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.6730924, y: 1.7333332}
-    newSize: {x: 2, y: 2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.0001, y: 0.0001}
-  m_EdgeRadius: 0
 --- !u!50 &6423568136849241819
 Rigidbody2D:
   serializedVersion: 4
@@ -169,8 +142,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!58 &-2102236463396647991
-CircleCollider2D:
+--- !u!70 &1552101657381841734
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -179,9 +152,9 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 1.3365462
+  m_Offset: {x: -0.0061708787, y: -0.076076575}
+  m_Size: {x: 1.4515263, y: 0.8923868}
+  m_Direction: 1

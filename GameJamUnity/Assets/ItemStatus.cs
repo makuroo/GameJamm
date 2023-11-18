@@ -31,7 +31,6 @@ public class ItemStatus : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision);
         if (collision.gameObject.CompareTag("Item"))
         {
             holdingBall = true;

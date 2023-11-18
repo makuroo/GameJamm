@@ -27,7 +27,6 @@ public class ItemSpawn : MonoBehaviour
     {
         Vector2 randomSpawnPos = spawnPos[Random.Range(0, spawnPos.Length)].position;
 
-        Debug.Log(randomSpawnPos);
         spawnedItem = Instantiate(item, randomSpawnPos, Quaternion.identity);
     }
 
