@@ -2,13 +2,13 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
-/[Ll]ibrary/
+**/[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
 /[Bb]uild/
 /[Bb]uilds/
-/[Ll]ogs/
-/[Uu]ser[Ss]ettings/
+**/[Ll]ogs/
+**/[Uu]ser[Ss]ettings/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
@@ -46,6 +46,7 @@ ExportedObj/
 *.mdb
 *.opendb
 *.VC.db
+*.log
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -70,3 +71,17 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+GameJamUnity/UserSettings/EditorUserSettings.asset
+GameJamUnity/UserSettings/EditorUserSettings.asset
+GameJamUnity/UserSettings/EditorUserSettings.asset
+GameJamUnity/UserSettings/Layouts/default-2021.dwlt
+*.dwlt
+GameJamUnity/UserSettings/EditorUserSettings.asset
+GameJamUnity/UserSettings/EditorUserSettings.asset
+*.dwlt
+GameJamUnity/UserSettings/EditorUserSettings.asset
+GameJamUnity/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+GameJamUnity/obj/Debug/Assembly-CSharp.csproj.AssemblyReference.cache
+GameJamUnity/Assets/TextMesh Pro/Fonts/Fipps-Regular SDF.asset
+*.dwlt
+GameJamUnity/UserSettings/Layouts/default-2021.dwlt
