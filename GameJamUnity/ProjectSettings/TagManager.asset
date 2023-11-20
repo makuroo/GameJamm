@@ -11,6 +11,7 @@ TagManager:
   - Item
   - Portal
   - BallHolder
+  - Boss
   layers:
   - Default
   - TransparentFX
