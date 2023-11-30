@@ -7,20 +7,44 @@ public class HookMekanik : MonoBehaviour
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject chainPrefabs;
     [SerializeField] private GameObject[] trees;
-    [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private float chainSpeed = 5f;
+    [SerializeField] private float moveSpeed = 4f;
+    [SerializeField] private float chainSpeed = 4f;
+    public GameObject currentChain;
     private LineRenderer lr;
+    private SpriteRenderer spriteRenderer;
+    public Sprite[] frames;
+    public Material mats;
 
     void Start()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
         lr = gameObject.AddComponent<LineRenderer>();
-        lr.startWidth = 0.1f;
-        lr.endWidth = 0.1f;
+        lr.material = mats;
+        lr.sortingOrder = 15;
+        lr.startWidth = 0.2f;
+        lr.endWidth = 0.2f;
         lr.positionCount = 2;
 
         StartCoroutine(InstantiateChainWithCooldown());
     }
+    void Update()
+    {
+        if (player != null)
+        {
+            Vector3 direction = player.transform.position - transform.position;
+            float angle = Mathf.Atan2(-direction.y, direction.x) * Mathf.Rad2Deg;
 
+            if (angle < 0)
+                angle += 360;
+
+            int frame = Mathf.FloorToInt((angle + 22.5f) / 45) % 8;
+
+            if (frame >= 0 && frame < frames.Length)
+            {
+                spriteRenderer.sprite = frames[frame];
+            }
+        }
+    }
     void UpdateLineRenderer(Vector3 startPos, Vector3 endPos)
     {
         lr.SetPosition(0, startPos);
@@ -31,15 +55,33 @@ public class HookMekanik : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(5f);
+            yield return new WaitForSeconds(2f);
             GameObject closestTree = FindClosestTree();
             if (closestTree != null)
             {
-                GameObject chainInstance = Instantiate(chainPrefabs, transform.position, Quaternion.identity);
-                Rigidbody2D rb = chainInstance.GetComponent<Rigidbody2D>();
-                rb.velocity = (closestTree.transform.position - transform.position).normalized * chainSpeed;
+                Vector2 dist = closestTree.transform.position - transform.position;
+                Vector3 chainRotation = new Vector3(180,-180,Mathf.Atan2(dist.y, dist.x) * Mathf.Rad2Deg);
+                if (closestTree.transform.position.x > transform.position.x)
+                {
+                    GameObject chainInstance = Instantiate(chainPrefabs, transform.position, Quaternion.Euler(chainRotation));
+                    currentChain = chainInstance;
+                    Rigidbody2D rb = chainInstance.GetComponent<Rigidbody2D>();
+                    rb.velocity = (closestTree.transform.position - transform.position).normalized * chainSpeed;
 
-                StartCoroutine(FreezeChainWhenClose(chainInstance, closestTree));
+                    StartCoroutine(FreezeChainWhenClose(chainInstance, closestTree));
+                }
+                else
+                {
+                    chainRotation.x *= -1;
+                    GameObject chainInstance = Instantiate(chainPrefabs, transform.position, Quaternion.Euler(chainRotation));
+                    currentChain = chainInstance;
+                    Rigidbody2D rb = chainInstance.GetComponent<Rigidbody2D>();
+                    rb.velocity = (closestTree.transform.position - transform.position).normalized * chainSpeed;
+
+                    StartCoroutine(FreezeChainWhenClose(chainInstance, closestTree));
+                }
+                
+
             }
         }
     }
